@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Inventario</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+    <h1>Gestión de Inventario</h1>
+
+    <!-- Formulario para registrar la entrada -->
+    <div class="form-container">
+        <h3>Registrar Entrada de Producto</h3>
+        <input type="text" id="proceso" class="input-field" placeholder="# PROCESO" required><br>
+        <input type="number" id="cantidades" class="input-field" placeholder="CANTIDADES" required><br>
+        <input type="text" id="cliente" class="input-field" placeholder="CLIENTE" required><br>
+        <input type="date" id="fecha-llegada" class="input-field" placeholder="FECHA DE LLEGADA" required><br>
+        <button onclick="registrarEntrada()">Registrar Entrada</button>
+    </div>
+
+    <!-- Mensaje de éxito -->
+    <div id="mensaje-exito" class="hidden alert">ENTRADA REGISTRADA EXITOSAMENTE</div>
+
+    <!-- Formulario para registrar la salida -->
+    <div class="form-container">
+        <h3>Registrar Salida de Producto</h3>
+        <input type="text" id="proceso-salida" class="input-field" placeholder="# PROCESO (para salida)" required><br>
+        <input type="date" id="fecha-salida" class="input-field" placeholder="FECHA DE SALIDA" required><br>
+        <button onclick="registrarSalida()">Registrar Salida</button>
+    </div>
+
+    <!-- Navegación hacia el documento de registros -->
+    <a href="DATA/data.html" class="btn">Ver Registros</a>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

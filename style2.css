@@ -1,0 +1,130 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+    font-size: 36px;
+}
+
+/* Contenedor principal para la tabla de registros */
+#registro-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la sección de registros */
+#registro-container h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los encabezados de la tabla */
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Encabezados con fondo claro */
+th {
+    background-color: #f4f4f4;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Filas de la tabla */
+td {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Estilo para resaltar las filas cuando el mouse pasa sobre ellas */
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Botones de acción (Eliminar) dentro de la tabla */
+td button {
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+td button:hover {
+    background-color: #e03e3e;
+}
+
+/* Estilos para el enlace que regresa al formulario de registro */
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+a.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries para asegurar que el diseño sea responsive en pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #registro-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    td button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    a.btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros de Inventario</title>
+    <link rel="stylesheet" href="../CSS/style2.css">
+</head>
+<body>
+
+    <h1>Registros de Inventario</h1>
+    
+    <!-- Tabla para mostrar los registros -->
+    <div id="registro-container">
+        <h3>Registros</h3>
+        <table id="registro-tabla">
+            <thead>
+                <tr>
+                    <th># PROCESO</th>
+                    <th>CANTIDADES</th>
+                    <th>CLIENTE</th>
+                    <th>FECHA DE LLEGADA</th>
+                    <th>FECHA DE SALIDA</th>
+                    <th>NOVEDADES</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los registros se llenarán dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <a href="../index.html" class="btn">Volver a Registrar Entrada</a>
+
+    <script src="../JS/script.js"></script>
+    <script>
+        // Llamar la función para cargar los registros en la tabla cuando la página esté lista
+        window.onload = function() {
+            actualizarTabla();
+        };
+    </script>
+</body>
+</html>
